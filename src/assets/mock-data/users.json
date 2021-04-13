@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "Willyan Klumb",
+        "favoritesFeeds": [5]
+    },
+
+    {
+        "id": 2,
+        "name": "Josh",
+        "favoritesFeeds": []
+    },
+
+    {
+        "id": 3,
+        "name": "Jhon Doe",
+        "favoritesFeeds": []
+    },
+
+    {
+        "id": 4,
+        "name": "Nina"
+    }
+]

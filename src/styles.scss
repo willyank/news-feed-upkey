@@ -1,1 +1,160 @@
-/* You can add global styles to this file, and also import other style files */
+.button-menu-hide {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 200;
+}
+
+.arrow {
+    position: inherit;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.arrow-white {
+    color: white;
+}
+
+.arrow-black {
+    color: black;
+}
+
+@media only screen and (max-width: 500px) {
+    .menu {
+        position: absolute;
+        height: 100%;
+    }
+}
+
+.menu {
+    padding: 10px 1px 10px 1px;;
+    min-width: 200px;
+    background-color: #2f4050;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+
+    .icone {
+        //width: 100%;
+        height: 50px;
+        //padding: 25px 10px 25px 10px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        color: #fff;
+        padding-left: 10px;
+    }
+
+    .icone:hover{
+        cursor: pointer;
+        background-color: #a9b2b9;
+    }
+}
+
+.active-menu{
+    background-color: #293846 !important;
+}
+
+.area-app {
+    flex-grow: 1;
+    padding: .7em;
+    overflow: auto;
+}
+
+
+.bg-default-color {
+    background-color: white;
+}
+
+.favorite {
+    color: white;
+    cursor: pointer;
+    position: relative;
+    bottom: -10px;
+    right: -10px;
+    float: right;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.m-l-5{
+    margin-left: 5px;
+}
+
+.p-l-10{
+    padding-left: 10px;
+}
+
+.p-r-10{
+    padding-right: 10px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.avatar-container {
+    width: auto !important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+.bg-timeline {
+    background-color: white;    
+}
+
+.content {
+  background-color: #eaeaea;
+    padding: 20px 20px;    
+    position: relative;
+    border-radius: 6px;
+  }
+
+.container {
+    padding: 10px 20px;
+  }
+
+.row-comment{
+  border-left: solid orange;
+}
+
+.timeline-icon {
+  margin-left: -32px; 
+  color: darkslategray; 
+  background-color: white; 
+  padding: 10px 0px;
+}
+
+.inner-row-comment{
+  // border-left: solid;
+}
+
+// .inner-row-comment::before {
+//   content: '';
+//   position: absolute;
+//   width: 25px;
+//   height: 25px;
+//   background-color: white;
+//   border: 4px solid #FF9F55;
+//   border-radius: 50%;
+//   z-index: 1;
+// }

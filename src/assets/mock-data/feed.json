@@ -1,0 +1,70 @@
+[
+
+    {
+        "id": 1,
+        "date": "2021-04-10T10:21:49.511Z",
+        "description": "working on the NewsFeed test",
+        "type": 0,
+        "user": {
+            "id": 1,
+            "name": "Willyan Klumb"
+        }
+        
+    },
+
+    {
+        "id": 2,
+        "date": "2021-04-09T15:25:45.511Z",
+        "description": "added Viktor Dimitrievski as a friend!",
+        "type": 1,
+        "user": {
+            "id": 1,
+            "name": "Willyan Klumb"
+        }
+    },
+
+    {
+        "id": 3,
+        "date": "2021-04-08T14:00:44.511Z",
+        "description": "liked the announce of Software developer - Angular at UpKey!",
+        "type": 2,
+        "user": {
+            "id": 1,
+            "name": "Willyan Klumb"
+        }
+    },
+
+
+    {
+        "id": 4,
+        "date": "2021-04-09T15:25:43.511Z",
+        "description": "liked Willyan's new photo",
+        "type": 2,
+        "user": {
+            "id": 2,
+            "name": "Josh"
+        }
+    },
+
+    {
+        "id": 5,
+        "date": "2021-04-08T14:00:41.511Z",
+        "description": "Uploaded a new photo: 'Awesome weekend.png'",
+        "type": 3,
+        "user": {
+            "id": 2,
+            "name": "Josh"
+        }
+    },
+
+    {
+        "id": 6,
+        "date": "2021-04-01T04:00:42.511Z",
+        "description": "Uploaded a new photo: 'Awesome vacations.jpg'",
+        "type": 3,
+        "user": {
+            "id": 4,
+            "name": "Nina"
+        }
+    }
+]

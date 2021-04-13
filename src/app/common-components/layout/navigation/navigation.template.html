@@ -1,0 +1,22 @@
+<div id="mainMenu">
+    <div class="text-center">
+        <ngx-avatar class="img-circle" value="{{getAvatarLetters()}}" gravatarId="{{user.email}}"></ngx-avatar>
+        <div class="m-t-10">
+            <strong class="font-bold" style="color: white;">{{user.name.split(' ')[0]}}</strong>
+        </div>
+    </div>
+
+    <div class="icone" [routerLink]="['/feed/favorites/']" [ngClass]="{'active-menu' : activeRoute('/feed/favorites')}">
+        <i class="fas fa-fw fa-star"></i> <span class="m-l-5">Favorites</span>
+    </div>
+    <div class="icone home" [routerLink]="['/feed/list']" [ngClass]="{'active-menu' : activeRoute('/feed/list')}">
+        <i class="fas fa-fw fa-users"></i> <span class="m-l-5">All</span>
+    </div>
+    <h4 style="color: white;" class="p-r-10 p-l-10">My Friends</h4>
+    <div *ngIf="allFriends">
+        <div class="icone" *ngFor="let f of allFriends" [routerLink]="['/feed/friend/' + f.id]" [ngClass]="{'active-menu' : activeRoute('/feed/friend/' + f.id)}">
+            <i class="fa fa-user"></i>
+            <span class="m-l-5">{{f.name}}</span>
+        </div>
+    </div>
+</div>

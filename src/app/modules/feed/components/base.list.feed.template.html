@@ -1,0 +1,31 @@
+<div class="bg-default-color p-20">
+    <h3>{{componentTitle}}</h3>
+</div>
+
+<div *ngIf="allFeeds" class="m-t-20 bg-timeline p-20">
+    <div *ngIf="allFeeds.length > 0">
+        <div *ngFor="let f of allFeeds; index as idx" class="container row-comment">
+            <div class=" inner-row-comment">
+                <i class="timeline-icon fas fa-fw fa-user"
+                    [ngClass]="{'fa-user' : f.type === 0, 'fa-user-plus': f.type=== 1, 'fa-thumbs-up': f.type=== 2, 'fa-photo-video': f.type === 3}"></i>
+                <div style="min-width: 150px; display: inline-block; text-align: right; padding-right: 30px;">
+                    <div [title]="f.user.name">
+                        <b>{{f.user.name.split(' ')[0]}}</b>
+                    </div>
+                    <div>
+                        <small title="{{f.date | date: 'MM/dd/yyyy HH:mm:ss'}}">
+                            {{f.date | date: 'HH:mm:ss'}}
+                        </small>
+                    </div>
+                </div>
+                <div class="content" style="display: inline-block;">
+                    {{f.description}} <i class="favorite fas fa-fw fa-star" [style.color]="isFavorite(f.id) ? 'gold' : 'white'" 
+                    title="{{isFavorite(f.id) ? 'Remove favorite' : 'Add favorite'}}" (click)="addRemoveFavorite(f.id)"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="allFeeds.length < 1">
+        <h3 style="font-weight: bolder; color: gold">No feeds found!</h3>
+    </div>
+</div>
